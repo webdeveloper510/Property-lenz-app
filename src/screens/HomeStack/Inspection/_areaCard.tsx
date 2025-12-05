@@ -28,7 +28,7 @@ const _areaCard = React.memo(
         const {navigate} = useNavigation<NativeStackNavigationProp<any>>();
         const [status_item, setStatus] = useState(Data.status);
         const [comment, setComment] = useState<string>(Data.comments || '');
-        console.log("🚀 ~ comment:===========>", comment)
+        console.log('🚀 ~ comment:===========>', comment);
         const [visible, setVisible] = useState(false);
         const [index, setIndex] = useState(0);
         console.log('data images', Data.comments);
@@ -58,13 +58,13 @@ const _areaCard = React.memo(
                 comments: comment,
                 is_enable: enabled,
             };
-            console.log("updated data in test=======>",data)
+            console.log('updated data in test=======>', data);
             await apiUpdateStatus(data);
         };
 
         const handleStatusChange = async (newStatus: any) => {
-            console.log("🚀 ~ handleStatusChange ~ newStatus:", newStatus)
-            
+            console.log('🚀 ~ handleStatusChange ~ newStatus:', newStatus);
+
             if (status_item !== newStatus) {
                 await statusUpdate(newStatus, 1);
 
@@ -119,7 +119,6 @@ const _areaCard = React.memo(
                         resizeMode: 'stretch',
                     },
                     def: {
-                        backgroundColor: '#F2F2F2',
                         width: 49,
                         height: 46,
                         borderRadius: 10,
@@ -127,31 +126,31 @@ const _areaCard = React.memo(
                         borderColor: '#E5DCED',
                     },
                     n: {
-                        backgroundColor: '#ddf4ff',
+                        backgroundColor: '#9A46DB',
                         width: 49,
                         height: 44,
                         borderRadius: 10,
                     },
                     s: {
-                        backgroundColor: '#d7ffe3',
+                        backgroundColor: '#90C94D',
                         width: 49,
                         height: 44,
                         borderRadius: 10,
                     },
                     d: {
-                        backgroundColor: '#fff2cf',
+                        backgroundColor: '#FFC953',
                         width: 49,
                         height: 44,
                         borderRadius: 10,
                     },
                     a: {
-                        backgroundColor: '#ffdedb',
+                        backgroundColor: '#FF5379',
                         width: 49,
                         height: 44,
                         borderRadius: 10,
                     },
                     y: {
-                        backgroundColor: '#feead5',
+                        backgroundColor: '#46AEDB',
                         width: 49,
                         height: 44,
                         borderRadius: 10,
@@ -199,7 +198,7 @@ const _areaCard = React.memo(
 
                     countText: {
                         fontSize: 12,
-                        color: '#ffffff'
+                        color: '#ffffff',
                     },
 
                     addButton: {
@@ -259,9 +258,9 @@ const _areaCard = React.memo(
                         backgroundColor: 'red',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        borderRadius:50,
-                        top:-8,
-                        right:-8
+                        borderRadius: 50,
+                        top: -8,
+                        right: -8,
                     },
                     title1: {
                         fontSize: 20,
@@ -360,11 +359,19 @@ const _areaCard = React.memo(
             [],
         );
         const statusTextColors: any = {
-            NEW: '#34b4eb',
-            SATISFACTORY: '#22B14B',
-            DAMAGE: '#EEBD34',
-            ATTENTION: '#CD3223',
-            NOT_AVAILABLE: '#E78922',
+            NEW: '#9A46DB',
+            SATISFACTORY: '#90C94D',
+            DAMAGE: '#FFC953',
+            ATTENTION: '#FF5379',
+            NOT_AVAILABLE: '#46AEDB',
+        };
+
+        const statusTextBgColors: any = {
+            NEW: '#EDE3FF',
+            SATISFACTORY: '#F1FFE3',
+            DAMAGE: '#FFF8E3',
+            ATTENTION: '#FFE3F2',
+            NOT_AVAILABLE: '#E3F7FF',
         };
         const images = [
             {uri: 'https://picsum.photos/200/300'},
@@ -423,17 +430,42 @@ const _areaCard = React.memo(
                                     }>
                                     <Box
                                         justifyContent="center"
-                                        style={
-                                            status_item === statusKey
-                                                ? index < 4
-                                                    ? styles[
+                                        // style={
+                                        //     status_item === statusKey
+                                        //         ? index < 4
+                                        //             ? styles[
+                                        //                   statusKey
+                                        //                       .charAt(0)
+                                        //                       .toLowerCase()
+                                        //               ]
+                                        //             : styles.y
+                                        //         : styles.def
+                                        // }
+
+                                        style={{
+                                            ...styles.def, // Start with the base default styles (width, border, etc.)
+                                            backgroundColor:
+                                                status_item === statusKey
+                                                    ? index < 4 // If active/selected, use the special active style (which includes a background color)
+                                                        ? styles[
+                                                              statusKey
+                                                                  .charAt(0)
+                                                                  .toLowerCase()
+                                                          ].backgroundColor
+                                                        : styles.y
+                                                              .backgroundColor
+                                                    : statusTextBgColors[
                                                           statusKey
-                                                              .charAt(0)
-                                                              .toLowerCase()
-                                                      ]
-                                                    : styles.y
-                                                : styles.def
-                                        }
+                                                      ] ||
+                                                      styles.def
+                                                          .backgroundColor, // <--- Dynamic Color
+                                            // The rest of the style prop from your original logic is now cleaner:
+                                            // status_item === statusKey
+                                            //     ? index < 4
+                                            //         ? styles[statusKey.charAt(0).toLowerCase()]
+                                            //         : styles.y
+                                            //     : { ...styles.def, backgroundColor: defaultBackgroundColors[statusKey] || '#F2F2F2' }
+                                        }}
                                         alignItems="center">
                                         <Text
                                             bold
@@ -607,9 +639,7 @@ const _areaCard = React.memo(
                         <View style={styles.popup1}>
                             {/* Header */}
                             <View style={styles.header}>
-                                <Text style={styles.title1}>
-                                    Preview
-                                </Text>
+                                <Text style={styles.title1}>Preview</Text>
 
                                 <TouchableOpacity
                                     onPress={() => setVisible(false)}

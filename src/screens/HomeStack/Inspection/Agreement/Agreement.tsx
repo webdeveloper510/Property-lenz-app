@@ -623,10 +623,10 @@ const Agreement = ({navigation}: any): React.JSX.Element => {
                                         onPress={()=>{
                                                  dispatch(setInspectorSign(null));
                                                 if (
-                                                    canvasRef &&
-                                                    canvasRef.current
+                                                    canvasRef1 &&
+                                                    canvasRef1.current
                                                 ) {
-                                                    canvasRef.current.resetImage();
+                                                    canvasRef1.current.resetImage();
                                                 } else {
                                                     console.log(
                                                         'canvasRef is null',

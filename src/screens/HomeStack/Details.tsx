@@ -56,6 +56,7 @@ import Calendar from '@/assets/icon/calendarnew.png';
 import hourGlass from '@/assets/icon/hourglass.png';
 import Edit from '@/assets/icon/edit-text.png';
 import Delete from '@/assets/icon/bin.png';
+import { background } from 'styled-system';
 const screenHeight = Dimensions.get('window').height;
 interface Tenant {
     id: number;
@@ -78,6 +79,7 @@ interface DataState {
     overdue: InspectionItem[];
     recent: InspectionItem[];
     inProcess: InspectionItem[];
+    awaitingReview: InspectionItem[];
 }
 
 interface InspectionItem {
@@ -150,6 +152,7 @@ const Details = ({navigation}: any): React.JSX.Element => {
         overdue: [],
         recent: [],
         inProcess: [],
+        awaitingReview: []
     });
     const inspectionOptions = [
         {label: 'Move-In', value: 'MOVE_IN'},
@@ -349,7 +352,7 @@ const Details = ({navigation}: any): React.JSX.Element => {
 
     const Badge = ({label, color, textColor, name}) => (
         <View style={styles.badgeContainer}>
-            <View style={[styles.badgeCircle]}>
+            <View style={[styles.badgeCircle,{backgroundColor:color}]}>
                 <Text style={[styles.badgeLabel, {color: textColor}]}>
                     {label}
                 </Text>
@@ -618,6 +621,17 @@ const Details = ({navigation}: any): React.JSX.Element => {
                             showsVerticalScrollIndicator={false}
                             contentContainerStyle={{paddingVertical: 10}}
                         />
+
+                          {dataResult?.awaitingReview.length > 0 && (
+                            <Text style={styles.title}>Awaiting Review</Text>
+                        )}
+                        <FlatList
+                            data={dataResult?.awaitingReview}
+                            renderItem={renderItem}
+                            keyExtractor={item => item.id.toString()}
+                            showsVerticalScrollIndicator={false}
+                            contentContainerStyle={{paddingVertical: 10}}
+                        />
                         {/* <View
                         style={{
                             width: '70%',
@@ -699,14 +713,14 @@ const Details = ({navigation}: any): React.JSX.Element => {
                                 <View style={styles.badgeRow}>
                                     <Badge
                                         label="N"
-                                        color="#D9D9F5"
-                                        textColor="#34b4eb"
+                                        color="#EDE3FF"
+                                        textColor="#9A46DB"
                                         name="New"
                                     />
                                     <Badge
                                         label="!"
-                                        color="#FFF3CF"
-                                        textColor="#CD3223"
+                                        color="#FFE3F2"
+                                        textColor="#FF5379"
                                         name="Needs Attention"
                                     />
                                 </View>
@@ -714,14 +728,14 @@ const Details = ({navigation}: any): React.JSX.Element => {
                                 <View style={styles.badgeRow}>
                                     <Badge
                                         label="S"
-                                        color="#DFF7E3"
-                                        textColor="#22B14B"
+                                        color="#F1FFE3"
+                                        textColor="#90C94D"
                                         name="Satisfactory"
                                     />
                                     <Badge
                                         label="N/A"
-                                        color="#FCE3E3"
-                                        textColor="#E78922"
+                                        color="#E3F7FF"
+                                        textColor="#46AEDB"
                                         name="Not Available"
                                     />
                                 </View>
@@ -729,8 +743,8 @@ const Details = ({navigation}: any): React.JSX.Element => {
                                 <View style={styles.badgeRow}>
                                     <Badge
                                         label="D"
-                                        color="#F8D6DE"
-                                        textColor="#EEBD34"
+                                        color="#FFF8E3"
+                                        textColor="#FFC953"
                                         name="Existing Damage"
                                     />
                                 </View>
@@ -1235,7 +1249,7 @@ const styles = StyleSheet.create({
         width: '45%',
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#F8F8F8',
+        backgroundColor: '#F2F2F2',
         padding: 10,
         borderRadius: 15,
         marginTop: 10,

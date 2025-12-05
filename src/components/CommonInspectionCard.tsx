@@ -52,7 +52,7 @@ const CommonInspectionCard: React.FC<Props> = ({
             case 'overdue':
                 return '#FFB674';
             case 'awaiting_review':
-                return '#FFB674';
+                return '#8CABF9';
             case 'completed':
                 return '#6ACA45';
             default:
@@ -71,7 +71,7 @@ const CommonInspectionCard: React.FC<Props> = ({
             case 'overdue':
                 return '#FFB674';
             case 'awaiting_review':
-                return '#FFB674';
+                return '#aec4fbd1';
             case 'completed':
                 return '#E7F8E1';
             default:
@@ -91,9 +91,9 @@ const CommonInspectionCard: React.FC<Props> = ({
             }}>
             {/* Top Row */}
             <View
-                style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+                style={{flexDirection: 'row', justifyContent: 'space-between',width:'100%'}}>
                 {/* Icon + Title */}
-                <View style={{flexDirection: 'row'}}>
+                <View style={{flexDirection: 'row',width:'80%'}}>
                     <View
                         style={{
                             width: 45,
@@ -114,7 +114,7 @@ const CommonInspectionCard: React.FC<Props> = ({
                         />
                     </View>
 
-                    <View style={{width: '70%'}}>
+                    <View>
                         <Text
                             style={{
                                 color: '#9A46DB',
@@ -130,15 +130,15 @@ const CommonInspectionCard: React.FC<Props> = ({
                                 fontWeight: '600',
                             }}>
                             {data?.activity?.replace(/_/g, ' ')}{' '}
-                            {data?.property?.name?.length > 5
-                                ? data?.property.name.slice(0, 5) + '...'
+                            {data?.property?.name?.length > 8
+                                ? data?.property.name.slice(0, 8) + '...'
                                 : data?.property?.name}
                         </Text>
                     </View>
                 </View>
 
                 {/* Status */}
-
+                <View style={{width:'20%',alignItems:'flex-end'}}>
                 <Text
                     style={{
                         color: getStatusColor(data?.inspection_type),
@@ -147,6 +147,7 @@ const CommonInspectionCard: React.FC<Props> = ({
                     }}>
                     {data?.inspection_type.replace('_', ' ')}
                 </Text>
+                </View>
             </View>
 
             {/* Middle Row */}
