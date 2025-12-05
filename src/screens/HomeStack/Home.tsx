@@ -160,7 +160,7 @@ const Home = ({navigation}: any): React.JSX.Element => {
     const getAllInspectionData = async () => {
         try {
             const response = await apiInspectionListData();
-            console.log("🚀 ~ getAllInspectionData ~ response:", response)
+            console.log("🚀 ~ getAllInspectionData ~ response:", response.result)
             if (response.status) {
                 const {data} = response.result;
 
@@ -528,6 +528,8 @@ const Home = ({navigation}: any): React.JSX.Element => {
                                 justifyContent: 'space-between',
                             }}
                             renderItem={({item}) => {
+                                console.log("🚀 ~ Home ~ item:", item)
+                                
                                 return (
                                     <TouchableOpacity
                                         style={styles.card21}

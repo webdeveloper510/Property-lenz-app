@@ -146,9 +146,15 @@ const EditProperty = ({navigation}: any): React.JSX.Element => {
                 setNotes(propertyData.notes || '');
                 setPropertyName(propertyData.name || '');
                 setLocation(propertyData?.location || '');
-                console.log("🚀 ~ EditProperty ~ propertyData?.location:", propertyData?.location)
+                console.log(
+                    '🚀 ~ EditProperty ~ propertyData?.location:',
+                    propertyData?.location,
+                );
                 const loadedAddress = propertyData.location || '';
-                console.log("🚀 ~ EditProperty ~ loadedAddress:", loadedAddress)
+                console.log(
+                    '🚀 ~ EditProperty ~ loadedAddress:',
+                    loadedAddress,
+                );
                 setAddress(loadedAddress);
                 setAddress_2(propertyData.address_line_2 || '');
                 setCity(propertyData.city || '');
@@ -174,9 +180,10 @@ const EditProperty = ({navigation}: any): React.JSX.Element => {
                 }
 
                 const areasResponse: any = await apiNewPictureAreas(propertyId);
-             
+
                 if (areasResponse.status) {
                     const areasData = areasResponse.result;
+                    console.log('🚀 ~ EditProperty ~ areasData:', areasData);
                     setSelectedAreas([...areasData]);
                     let officeSpaceCount = 0;
                     let roomCount = 0;
@@ -231,10 +238,18 @@ const EditProperty = ({navigation}: any): React.JSX.Element => {
 
                     areasData.forEach(area => {
                         const title = area.title?.toLowerCase();
-                        // ------------ COMMERCIAL COUNT ------------
-                        if (title.includes('office space')) officeSpaceCount++;
-                        if (title.includes('room')) roomCount++;
-                        if (title.includes('restroom')) restroomCount++;
+
+                        // ------------ COMMERCIAL COUNT (FIXED) ------------
+                        if (title.includes('office space')) {
+                            // 'Office Space' is specific and can be separate.
+                            officeSpaceCount++;
+                        } else if (title.includes('restroom')) {
+                            // 🥇 1. Check for the specific term 'restroom' first.
+                            restroomCount++;
+                        } else if (title.includes('room')) {
+                            // 🥈 2. Check for the generic term 'room' only if it's NOT a restroom.
+                            roomCount++;
+                        }
 
                         // ------------ RESIDENTIAL COUNT ------------
                         if (area.is_custom === 1 && title.includes('bedroom')) {
@@ -252,8 +267,8 @@ const EditProperty = ({navigation}: any): React.JSX.Element => {
                     });
 
                     if (propertyData.type === 'COMMERCIAL') {
-                      
                         // Update commercial values
+                        console.log('rooms count ================>', roomCount);
                         setofficeSpaces(officeSpaceCount.toString());
                         setRooms(roomCount.toString());
                         setRestrooms(restroomCount.toString());
@@ -835,7 +850,6 @@ const EditProperty = ({navigation}: any): React.JSX.Element => {
         // Add new valid areas
         const finalSelectedAreas = [...filteredAreas, ...newAreas];
 
-
         const finalAreas = finalSelectedAreas.map(area => ({
             area_id: area.id || null,
             title: area.title,
@@ -859,7 +873,7 @@ const EditProperty = ({navigation}: any): React.JSX.Element => {
             longitude,
             areas: finalAreas,
         };
-    
+
         if (propertyImage?.name) {
             data.cover_image = propertyImage;
         }
@@ -1245,7 +1259,6 @@ const EditProperty = ({navigation}: any): React.JSX.Element => {
                                         )
                                             ? true
                                             : false;
-                                      
 
                                         return (
                                             <View
