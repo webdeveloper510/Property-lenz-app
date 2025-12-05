@@ -231,7 +231,7 @@ const RecentCompletedScreen = ({navigation, route}: any): React.JSX.Element => {
                                     }}>
                                     <TouchableOpacity
                                         onPress={() =>
-                                            navigation.navigate(
+                                            navigation.replace(
                                                 'Review',
                                                 addr?.id,
                                             )

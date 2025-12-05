@@ -41,7 +41,7 @@ const Review = ({navigation}: any): React.JSX.Element => {
     const tenantSign = useAppSelector(state => state.property.tenantSign);
     const inspectorSign = useAppSelector(state => state.property.inspectorSign);
     const [amenityData, setAmenityData] = useState<any>(null);
-    console.log('🚀 ~ Review ~ amenityData:', tenantSign);
+    console.log('🚀 ~ Review ~ amenityData:', inspectionData);
     const [modalVisible, setModalVisible] = React.useState(false);
     const [visible, setVisible] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
@@ -439,11 +439,7 @@ const Review = ({navigation}: any): React.JSX.Element => {
                                     color: '#250959',
                                     fontFamily: 'Gilroy',
                                 }}>
-                                {(inspectionData?.tenant?.[0]
-                                    ?.tenant_first_name || '') +
-                                    ' ' +
-                                    (inspectionData?.tenant?.[0]
-                                        ?.tenant_last_name || '')}
+                             {`${inspectionData?.tenants[0]?.first_name ?? ''} ${inspectionData?.tenants[0]?.last_name ?? ''}`}
                             </Text>
                         </View>
                         <View style={{flex: 1}}>
@@ -785,7 +781,7 @@ const Review = ({navigation}: any): React.JSX.Element => {
                                     Renter Signature
                                 </Text>
                                 <Text bold fontSize={13} color={'#250959'}>
-                                    Name: {inspectionData?.tenant[0]?.tenant_first_name}
+                                    Name: {inspectionData?.tenants[0]?.first_name}{' '}{inspectionData?.tenants[0]?.last_name}
                                 </Text>
                                 <View
                                     style={{
