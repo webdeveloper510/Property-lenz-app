@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.propertylenzapp-mergeReleaseResources-109:/values-ji/values-ji.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-4\\2f10751afc1475ce4a8a34ed0f1726f6\\transformed\\jetified-hcaptcha-20.48.6\\res\\values-ji\\values-ji.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "85",
+                        "endOffsets": "136"
+                    }
+                }
+            ]
+        }
+    ]
+}

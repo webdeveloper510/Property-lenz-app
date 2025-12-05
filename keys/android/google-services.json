@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "378302508201",
+    "project_id": "propertylenz-5a1c1",
+    "storage_bucket": "propertylenz-5a1c1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378302508201:android:db5734c5f68f9616d84db8",
+        "android_client_info": {
+          "package_name": "com.propertylenzapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378302508201-hcdh3d83tnmtul3atj5k1m5b3rrfncnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.propertylenzapp",
+            "certificate_hash": "cd7f1dbcb4c37c9fe9bf781a0b9d50c609dc95fa"
+          }
+        },
+        {
+          "client_id": "378302508201-jpcd0285pg8lt5olkmchq50mcuv7rip8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.propertylenzapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "378302508201-o6cef4ikmm717us3ihq3gtu2lnklpvqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.propertylenzapp",
+            "certificate_hash": "de75822f0bbe89d55fccb3360bef687cc1b71ecd"
+          }
+        },
+        {
+          "client_id": "378302508201-edsc7513nlf191bk1v4da87gn334d8fq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzrmZkB7P_R49-akQ_PVOZtorwYbZljO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378302508201-edsc7513nlf191bk1v4da87gn334d8fq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "378302508201-ki6baa1d1g248v91ndnivo77u0usvtel.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.propertylenz",
+                "app_store_id": "6670757682"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

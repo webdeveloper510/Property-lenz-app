@@ -1,0 +1,1034 @@
+[
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_search_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_search_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_delete.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_delete.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_zip_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_zip_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_menu_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_menu_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_activetask.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_activetask.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_edit_5.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_edit_5.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_prt.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_prt.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_plus.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_plus.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_bin.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_bin.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxhdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_flag_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_flag_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_empty.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_empty.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_state_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_state_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_tick.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_tick.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_edit_4.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_edit_4.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_activereporttab.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_activereporttab.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxhdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-hdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-hdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_my_task.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_my_task.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_user_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_user_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_moveout.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_moveout.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_updated.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_updated.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_u_inspections.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_u_inspections.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_role.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_role.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_logo_logo1.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_logo_logo1.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_drop_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_drop_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_upload.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_upload.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xhdpi/node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_image_v.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_image_v.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_close_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_close_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xhdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_share.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_share.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_cover_image.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_cover_image.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_turn_off.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_turn_off.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_addpropertyicom.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_addpropertyicom.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_createtenant.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_createtenant.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_activehome.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_activehome.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_setting_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_setting_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_calender_5.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_calender_5.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_imageicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_imageicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_home_n.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_home_n.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_camera.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_camera.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_tick_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_tick_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_edit.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_edit.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_notification.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_notification.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_activetask.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_activetask.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_home.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_home.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_world.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_world.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_completed.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_completed.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_task.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_task.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_email.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_email.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-hdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-hdpi/node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_upload_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_upload_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_mode_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_mode_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_eye_21.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_eye_21.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_sign.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_sign.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxhdpi_node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_location_on.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_location_on.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_logo_logo.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_logo_logo.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_close.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_close.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxxhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxxhdpi/node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_edit_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_edit_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_background_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_background_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_save_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_save_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_back.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_back.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_info_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_info_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_inscompletd.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_inscompletd.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_home.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_home.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_calender.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_calender.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_activesearchicontab.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_activesearchicontab.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_passkey.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_passkey.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_location_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_location_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_reports.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_reports.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_flatcalendar.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_flatcalendar.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_menu_4.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_menu_4.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_home_fill.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_home_fill.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_flatcalendarwhite.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_flatcalendarwhite.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_rentericon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_rentericon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_google.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_google.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_image_background2.jpg.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_image_background2.jpg"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_mobile_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_mobile_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_search.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_search.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxhdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_inspectionicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_inspectionicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxhdpi/node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_bath_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_bath_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnativecountrypickermodal_lib_assets_images_closeios.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnativecountrypickermodal_lib_assets_images_closeios.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_cameranew.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_cameranew.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_menu_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_menu_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_btn.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_btn.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_avatarwhite.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_avatarwhite.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_eye_v.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_eye_v.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_out.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_out.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_logo_googlelogo.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_logo_googlelogo.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_eye_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_eye_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_setbtn.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_setbtn.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_flathomewhite.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_flathomewhite.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_progress.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_progress.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_close.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_close.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_user.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_user.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_logout_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_logout_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_hide.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_hide.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_add_c.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_add_c.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_edit_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_edit_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_logo_monowhite.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_logo_monowhite.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_pet.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_pet.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_company.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_company.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_tasks.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_tasks.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xhdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_union_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_union_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_bell.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_bell.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnativecountrypickermodal_lib_assets_images_close.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnativecountrypickermodal_lib_assets_images_close.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxxhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxxhdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_setting.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_setting.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-hdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-hdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_disable.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_disable.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_reporticontab.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_reporticontab.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_key_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_key_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_heart_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_heart_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_hide.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_hide.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_pendingicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_pendingicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_completediconheader.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_completediconheader.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_property.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_property.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_save.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_save.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_filter.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_filter.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_edittext.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_edittext.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_up_dwon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_up_dwon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_logo_applelogo.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_logo_applelogo.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_cal_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_cal_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxhdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxxhdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_homesearch.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_homesearch.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-hdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-hdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xhdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_plusmark.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_plusmark.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_rentericonoutline.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_rentericonoutline.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_drag.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_drag.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_delete_21.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_delete_21.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_history.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_history.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_searchhome.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_searchhome.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_reset_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_reset_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_flathome.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_flathome.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_review_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_review_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_avatar.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_avatar.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_trash_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_trash_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_searchicontab.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_searchicontab.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_reportcard.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_reportcard.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_task.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_task.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_menu.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_menu.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_share_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_share_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_tnt.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_tnt.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnativeelementdropdown_src_assets_down.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnativeelementdropdown_src_assets_down.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_cal.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_cal.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_view.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_view.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_state.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_state.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_pro.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_pro.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_camicon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_camicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnativeelementdropdown_src_assets_close.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnativeelementdropdown_src_assets_close.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_home_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_home_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-hdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-hdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_templateicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_templateicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xhdpi/node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_notification_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_notification_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxxhdpi/node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_setting.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_setting.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_city_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_city_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_flatuser.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_flatuser.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_image_home.jpg.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_image_home.jpg"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_unit_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_unit_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_camera.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_camera.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_amen.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_amen.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_view.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_view.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_cal_1.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_cal_1.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_settings.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_settings.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_imageicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_imageicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_homenew.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_homenew.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_settingprofile.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_settingprofile.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_right_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_right_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_btnback.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_btnback.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_image_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_image_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_camoption.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_camoption.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_profileicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_profileicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_movein.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_movein.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_imgatach.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_imgatach.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_calender_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_calender_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_inspections.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_inspections.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_completedicon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_completedicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_location_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_location_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_email_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_email_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_chatatach.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_chatatach.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_download.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_download.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_bed_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_bed_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_ins.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_ins.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_in.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_in.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_addmore.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_addmore.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_union.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_union.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_download_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_download_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_image_4.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_image_4.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_reoprticon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_reoprticon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_tenantsicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_tenantsicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_settingico.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_settingico.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_free.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_free.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_settingnotification.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_settingnotification.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_bottombar.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_bottombar.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_subscription.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_subscription.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_locationicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_locationicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_tax_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_tax_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_cal_3.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_cal_3.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_report_5.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_report_5.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_signed.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_signed.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_logo_splash.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_logo_splash.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-xxxhdpi/node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_setting_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_setting_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_timelineicon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_timelineicon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_user_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_user_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_lock.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_lock.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.propertylenzapp-main-112:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_reporticon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_reporticon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.propertylenzapp-main-112:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_calendarnew.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_calendarnew.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_edit2.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_edit2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_drawer_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_drawer_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_logouticon.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_logouticon.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_banner.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_banner.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_search_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_search_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_background.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_background.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_commentoption.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_commentoption.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_settinglogout.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_settinglogout.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_awaiting.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_awaiting.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_trash_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_trash_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_union_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_union_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_pro_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_pro_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_violation.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_violation.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_profile_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_profile_2.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_activeplus.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_activeplus.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_bell.png.flat",
+        "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_bell.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_hourglass.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_hourglass.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_home_d.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_home_d.png"
+    }
+]

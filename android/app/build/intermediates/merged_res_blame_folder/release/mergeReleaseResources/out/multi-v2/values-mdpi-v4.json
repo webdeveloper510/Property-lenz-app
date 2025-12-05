@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.propertylenzapp-mergeReleaseResources-109:/values-mdpi-v4/values-mdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-4\\94606c6093a0e418a6afc32707932938\\transformed\\jetified-payments-core-20.48.6\\res\\values-mdpi-v4\\values-mdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

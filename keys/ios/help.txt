@@ -1,0 +1,4 @@
+
+Name:FirebaseConsoleAPNS
+Key ID:CWKXD69B58
+Services:Apple Push Notifications service (APNs)
