@@ -193,12 +193,9 @@ const RecentCompletedScreen = ({navigation, route}: any): React.JSX.Element => {
                                         <TouchableOpacity
                                             onPress={() => {
                                                 // Functionality: Navigate to Edit screen
-                                                navigation.navigate(
-                                                    'EditRoot',
-                                                    {
-                                                        propertyId: addr?.id,
-                                                    },
-                                                );
+                                                navigation.navigate('Areas', {
+                                                    id: addr?.id,
+                                                });
                                             }}
                                             style={{
                                                 flexDirection: 'row',

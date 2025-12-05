@@ -47,13 +47,15 @@ const Review = ({navigation}: any): React.JSX.Element => {
     const [isLoading, setIsLoading] = useState(true);
     const [selectIndex, setSelectedIndex] = useState(0);
     const [index, setIndex] = useState(0);
+    const [viewData,setViewData] = useState();
     const dispatch = useAppDispatch();
     const route = useRoute();
     const insId: any = route.params;
 
     const inspectionGet = async () => {
+       
         const response = await apiSpecificInspection(insId);
-        console.log("🚀 ~ inspectionGet ~ response:", response)
+       
         if (response.status) {
             dispatch(setInspection(response.result));
             dispatch(hideLoader());
@@ -439,7 +441,7 @@ const Review = ({navigation}: any): React.JSX.Element => {
                                     color: '#250959',
                                     fontFamily: 'Gilroy',
                                 }}>
-                             {`${inspectionData?.tenants[0]?.first_name ?? ''} ${inspectionData?.tenants[0]?.last_name ?? ''}`}
+                             {`${inspectionData?.tenant[0]?.tenant_first_name ?? ''} ${inspectionData?.tenant[0]?.tenant_last_name ?? ''}`}
                             </Text>
                         </View>
                         <View style={{flex: 1}}>
@@ -781,7 +783,7 @@ const Review = ({navigation}: any): React.JSX.Element => {
                                     Renter Signature
                                 </Text>
                                 <Text bold fontSize={13} color={'#250959'}>
-                                    Name: {inspectionData?.tenants[0]?.first_name}{' '}{inspectionData?.tenants[0]?.last_name}
+                                    Name: {inspectionData?.tenant[0]?.tenant_first_name}{' '}{inspectionData?.tenant[0]?.tenant_last_name}
                                 </Text>
                                 <View
                                     style={{

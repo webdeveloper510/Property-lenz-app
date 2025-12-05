@@ -101,15 +101,23 @@ export const apiInspectionList = async (data: { per_page: number, property_id?: 
 		const response = await apiService.get('/inspection', data);
 		return response;
 };
+// export const apiSpecificInspection = async (data: number): Promise<ResponseObject<InspectionGet>> => {
+// 	const online = await cacheService.checkIsOnline();
+// 	if (online) {
+// 		const response = await apiService.get(`/inspection/${data}`);
+// 		return response;
+// 	} else {
+		
+// 		const response = await cacheService.makeOfflineResponse('@inspectionData', {screen: 'specific inspection', id: data});
+// 		return response;
+// 	}
+// };
+
 export const apiSpecificInspection = async (data: number): Promise<ResponseObject<InspectionGet>> => {
-	const online = await cacheService.checkIsOnline();
-	if (online) {
+	
 		const response = await apiService.get(`/inspection/${data}`);
 		return response;
-	} else {
-		const response = await cacheService.makeOfflineResponse('@inspectionData', {screen: 'specific inspection', id: data});
-		return response;
-	}
+
 };
 export const apiInspectionAdd = async (data: AddInspectionPay): Promise<ResponseObject<AddInspectionRes>> => {
 	const response = await apiService.post('/inspection/add', data);
