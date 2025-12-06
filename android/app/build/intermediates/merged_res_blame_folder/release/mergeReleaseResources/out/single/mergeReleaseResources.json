@@ -4,6 +4,10 @@
         "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_search_3.png"
     },
     {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_update_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_update_2.png"
+    },
+    {
         "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_delete.png.flat",
         "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_delete.png"
     },
@@ -352,6 +356,10 @@
         "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_image_background2.jpg"
     },
     {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_camera_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_camera_2.png"
+    },
+    {
         "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_mobile_2.png.flat",
         "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_mobile_2.png"
     },
@@ -512,6 +520,10 @@
         "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_heart_2.png"
     },
     {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_cross_6.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_cross_6.png"
+    },
+    {
         "merged": "com.propertylenzapp-release-111:/drawable-xhdpi_src_assets_icon_hide.png.flat",
         "source": "com.propertylenzapp-main-112:/drawable-xhdpi/src_assets_icon_hide.png"
     },
@@ -616,12 +628,12 @@
         "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_flathome.png"
     },
     {
-        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_review_2.png.flat",
-        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_review_2.png"
-    },
-    {
         "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_avatar.png.flat",
         "source": "com.propertylenzapp-main-112:/drawable-mdpi/src_assets_icon_avatar.png"
+    },
+    {
+        "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_review_2.png.flat",
+        "source": "com.propertylenzapp-res-105:/drawable-mdpi/src_assets_icon_review_2.png"
     },
     {
         "merged": "com.propertylenzapp-release-111:/drawable-mdpi_src_assets_icon_trash_3.png.flat",

@@ -32,7 +32,7 @@ import Edit from '@/assets/icon/edit_3.png';
 import Delete from '@/assets/icon/delete_21.png';
 import Eye from '@/assets/icon/eye_21.png';
 import FastImage from 'react-native-fast-image';
-import Amen from '@/assets/icon/amen.png'
+import Amen from '@/assets/icon/amen.png';
 const data = [
     {
         id: 1,
@@ -90,14 +90,17 @@ const PropertyListScreen = ({navigation}: any): React.JSX.Element => {
             per_page: 50,
             page_no: page,
         });
-        console.log("🚀 ~ getList ~ response.result.data:", response.result.data[0])
+        console.log(
+            '🚀 ~ getList ~ response.result.data:',
+            response.result.data[0],
+        );
         if (response.status) {
             setList(response.result.data);
             dispatch(hideLoader());
             // setTotalPage(response.result.meta_info.total_pages);
         }
     };
-// navigation.navigate('AmenitiesAdd', { propertyId: propertyId, propertyType: propertyType });
+    // navigation.navigate('AmenitiesAdd', { propertyId: propertyId, propertyType: propertyType });
     return (
         <SafeAreaView style={{flex: 1}}>
             <View style={styles.container}>
@@ -225,15 +228,41 @@ const PropertyListScreen = ({navigation}: any): React.JSX.Element => {
                                             </Text>
                                         </View>
                                     </View>
-
-                                    <View
+                                    <TouchableOpacity
+                                        style={{
+                                            width: 35,
+                                            height: 35,
+                                            borderRadius: 50,
+                                            borderWidth: 1,
+                                            borderColor: '#F3E7FD',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                            // position: 'absolute',
+                                        }}
+                                        onPress={() => {
+                                            navigation.navigate(
+                                                'Details',
+                                                item?.id,
+                                            );
+                                            //  navigation.navigate('AmenitiesAdd', { propertyId: item?.id, propertyType: item?.type });
+                                        }}>
+                                        <Image
+                                            source={require('../../assets/icon/right_2.png')}
+                                            style={{
+                                                width: 11,
+                                                height: 11,
+                                                tintColor: '#9A46DB',
+                                            }}
+                                            resizeMode="contain"
+                                        />
+                                    </TouchableOpacity>
+                                    {/* <View
                                         style={{
                                             width: '25%',
                                             alignItems: 'flex-end',
                                         }}>
                                         <Menu
-                                            // isOpen={isMenuOpen}
-                                            // onClose={() => setIsMenuOpen(false)}
+                                           
                                             w="140"
                                             style={{
                                                 borderRadius: 10,
@@ -242,7 +271,6 @@ const PropertyListScreen = ({navigation}: any): React.JSX.Element => {
                                             trigger={triggerProps => {
                                                 return (
                                                     <TouchableOpacity
-                                                        // onPress={()=> setIsMenuOpen(!isMenuOpen)}
                                                         {...triggerProps}>
                                                         <Image
                                                             source={require('../../assets/icon/menu_3.png')}
@@ -388,7 +416,7 @@ const PropertyListScreen = ({navigation}: any): React.JSX.Element => {
                                                 </TouchableOpacity>
                                             </Menu.Item>
                                         </Menu>
-                                    </View>
+                                    </View> */}
                                 </View>
                             );
                         }}

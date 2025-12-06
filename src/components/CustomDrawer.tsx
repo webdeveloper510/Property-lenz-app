@@ -15,7 +15,7 @@ import {
 } from '@/state/authSlice';
 import {setInspection} from '@/state/propertyDataSlice';
 export default function CustomDrawer({ navigation }: DrawerContentComponentProps) {
-  const [isActive,setIsActive] = useState('HomeTab')
+  const [isActive,setIsActive] = useState('PropertyListScreen')
    const userData: UserDataObject | any = useAppSelector(
           state => state.auth.userData,
       );
@@ -60,7 +60,19 @@ export default function CustomDrawer({ navigation }: DrawerContentComponentProps
       </View>
 
       {/* ACTIVE MENU BUTTON */}
-      <View
+   
+     <View
+        
+        style={[styles.activeButton,{  backgroundColor: isActive == 'PropertyListScreen' ? '#9A46DB' :'#F2F2F2', borderRadius: isActive == 'PropertyListScreen'?50 :0, elevation: isActive == 'PropertyListScreen' ?3:0,paddingVertical: isActive== 'PropertyListScreen' ?10:5}]}
+      >
+        <TouchableOpacity onPress={() => {navigation.navigate("PropertyListScreen"),setIsActive('PropertyListScreen')}} style={styles.row}>
+          <Image source={require('../assets/icon/home_d.png')} style={styles.icon}  tintColor={ isActive == 'PropertyListScreen' ? "#ffffff" :'#B598CB'}/>
+          <Text style={[styles.activeText1,{color:isActive == 'PropertyListScreen' ? '#ffffff' :'#B598CB'}]}>Properties</Text>
+        </TouchableOpacity>
+      </View>
+              <View style={{width:'90%',height:1,backgroundColor:'#D9CBE5',marginBottom:4}}/>
+
+                 <View
         
         style={[styles.activeButton,{  backgroundColor: isActive == 'HomeTab' ? '#9A46DB' :'#F2F2F2', borderRadius: isActive == 'HomeTab'?50 :0, elevation: isActive == 'HomeTab' ?3:0, paddingVertical: isActive== 'HomeTab' ?12:5,}]}
       >
@@ -72,16 +84,6 @@ export default function CustomDrawer({ navigation }: DrawerContentComponentProps
         </TouchableOpacity>
       </View>
         <View style={{width:'90%',height:1,backgroundColor:'#D9CBE5',marginBottom:4}}/>
-     <View
-        
-        style={[styles.activeButton,{  backgroundColor: isActive == 'PropertyListScreen' ? '#9A46DB' :'#F2F2F2', borderRadius: isActive == 'PropertyListScreen'?50 :0, elevation: isActive == 'PropertyListScreen' ?3:0,paddingVertical: isActive== 'PropertyListScreen' ?10:5}]}
-      >
-        <TouchableOpacity onPress={() => {navigation.navigate("PropertyListScreen"),setIsActive('PropertyListScreen')}} style={styles.row}>
-          <Image source={require('../assets/icon/home_d.png')} style={styles.icon}  tintColor={ isActive == 'PropertyListScreen' ? "#ffffff" :'#B598CB'}/>
-          <Text style={[styles.activeText1,{color:isActive == 'PropertyListScreen' ? '#ffffff' :'#B598CB'}]}>Properties</Text>
-        </TouchableOpacity>
-      </View>
-              <View style={{width:'90%',height:1,backgroundColor:'#D9CBE5',marginBottom:4}}/>
        <View
         
         style={[styles.activeButton,{  backgroundColor: isActive == 'Manager' ? '#9A46DB' :'#F2F2F2', borderRadius: isActive == 'Manager'?50 :0, elevation: isActive == 'Manager' ?1:0,paddingVertical: isActive== 'Manager' ?10:5}]}
@@ -102,7 +104,7 @@ export default function CustomDrawer({ navigation }: DrawerContentComponentProps
         </TouchableOpacity>
       </View>
               <View style={{width:'90%',height:1,backgroundColor:'#D9CBE5',marginBottom:15}}/>
-       <View
+       {/* <View
         
         style={styles.activeButton}
       >
@@ -110,8 +112,8 @@ export default function CustomDrawer({ navigation }: DrawerContentComponentProps
           <Image source={require('../assets/icon/amen.png')} style={styles.icon} />
           <Text style={styles.activeText1}>Amenities</Text>
         </TouchableOpacity>
-      </View>
-              <View style={{width:'90%',height:1,backgroundColor:'#D9CBE5',marginBottom:15}}/>
+      </View> */}
+          
        <View
         
         style={styles.activeButton}

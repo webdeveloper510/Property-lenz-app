@@ -48,7 +48,7 @@ const AmenityCard = ({ data, index, onChange, onDelete }: any): React.JSX.Elemen
 					<Image source={Drag} style={styles.cardDrag} alt="icon" tintColor={'#9A46DB'} />
 					</View>
 					<Text mt={2} ml={2} fontSize={'sm'} style={styles.cardText} >{(data.sub_title === '' || show) ? data.title : data.sub_title}</Text>
-					<Box>
+					{/* <Box>
 						{show ? (
 							<Button style={styles.modalButton} size="sm" mr={2} onPress={onSave}>Save</Button>
 						) : (
@@ -61,7 +61,7 @@ const AmenityCard = ({ data, index, onChange, onDelete }: any): React.JSX.Elemen
 							</Pressable>
 						</HStack>
 						)}
-					</Box>
+					</Box> */}
 				</HStack>
 				{show ? (
 					<>

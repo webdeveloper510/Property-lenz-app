@@ -109,7 +109,8 @@ const InspectionDetails = ({navigation}: any): React.JSX.Element => {
     const [open1, setOpen1] = useState(false);
     const route = useRoute();
     const pId: any = route.params;
-    console.log('🚀 ~ InspectionDetails ~ pId:', pId.date);
+    const pIdFromRoute = route.params?.id;
+    console.log('🚀 ~ InspectionDetails ~ pId:', pIdFromRoute);
 
     const getDetails = async () => {
         const response = await apiGetSpecificProperty(pId?.id);
@@ -135,6 +136,20 @@ const InspectionDetails = ({navigation}: any): React.JSX.Element => {
             const response: any = await apiGetMyProperties();
             if (response.status) {
                 setPropertyData(response.result);
+                if (response.result?.length > 0 && pIdFromRoute) {
+                    console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@===>');
+                    const initialProperty = response.result.find(
+                        property => property.id === pIdFromRoute,
+                    );
+                    if (initialProperty) {
+                        console.log(
+                            'Property found and set from route:',
+                            initialProperty.name,
+                        );
+                        setSelectedProperty(initialProperty.id);
+                        setSelectedPropertyName(initialProperty.name);
+                    }
+                }
             }
         } catch (error) {
             console.log(error);
@@ -286,39 +301,50 @@ const InspectionDetails = ({navigation}: any): React.JSX.Element => {
         }
     };
 
+    // useEffect(() => {
+    //     if (propertyData?.length > 0 && pIdFromRoute) {
+    //         console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@===>")
+    //         const initialProperty = propertyData.find(
+    //             (property) => property.id === pIdFromRoute
+    //         );
+    //         if (initialProperty) {
+    //             console.log('Property found and set from route:', initialProperty.name);
+    //             setSelectedProperty(initialProperty.id);
+    //             setSelectedPropertyName(initialProperty.name);
+    //         }
+    //     }
+    // }, [propertyData, pIdFromRoute]);
+
     useEffect(() => {
         getAllInspector();
-        if (pId?.id) {
-            getDetails();
-        } else {
-            getAllProperty();
-        }
+
+        getAllProperty();
+
         // const currentDate = new Date();
         // const formattedDate = currentDate.toISOString().split('T')[0];
         // pId?.date == null ? setDate(formattedDate) : setDate(pId.date);
     }, []);
 
- useEffect(() => {
-    let baseDate;
+    useEffect(() => {
+        let baseDate;
 
-    if (pId?.date) {
-        // Convert pId.date ("2025-11-27") to Date object
-        baseDate = new Date(pId.date);
-    } else {
-        // Use current date
-        baseDate = new Date();
-    }
+        if (pId?.date) {
+            // Convert pId.date ("2025-11-27") to Date object
+            baseDate = new Date(pId.date);
+        } else {
+            // Use current date
+            baseDate = new Date();
+        }
 
-    // Set main date
-    setDate(baseDate);
+        // Set main date
+        setDate(baseDate);
 
-    // Create copy for grace date
-    const graceDate = new Date(baseDate);
-    graceDate.setDate(graceDate.getDate() + 3);
+        // Create copy for grace date
+        const graceDate = new Date(baseDate);
+        graceDate.setDate(graceDate.getDate() + 3);
 
-    setDate1(graceDate);
-
-}, [pId]);
+        setDate1(graceDate);
+    }, [pId]);
 
     useEffect(() => {
         if (selectedProperty != null) {
@@ -413,7 +439,7 @@ const InspectionDetails = ({navigation}: any): React.JSX.Element => {
                     justifyContent: 'space-between',
                     marginHorizontal: 20,
                     alignSelf: 'center',
-                    marginTop: Platform.OS == "ios" ? 0 :30,
+                    marginTop: Platform.OS == 'ios' ? 0 : 30,
                     paddingBottom: 5,
                 }}>
                 <BackButton navigation={navigation} />
@@ -568,15 +594,15 @@ const InspectionDetails = ({navigation}: any): React.JSX.Element => {
                                     onThumbColor={'#ffffff'}
                                     offTrackColor="#B598CB"
                                     isChecked={is_renter_present}
-                                    onChange={() =>{
-                                            if(is_renter_self_led){
-                                                 setIs_renter_present(true)
-                                                
-                                            }else{
-                                                setIs_renter_present(!is_renter_present)
-                                            }
+                                    onChange={() => {
+                                        if (is_renter_self_led) {
+                                            setIs_renter_present(true);
+                                        } else {
+                                            setIs_renter_present(
+                                                !is_renter_present,
+                                            );
                                         }
-                                    }
+                                    }}
                                 />
                                 <Text
                                     style={{
@@ -784,22 +810,28 @@ const InspectionDetails = ({navigation}: any): React.JSX.Element => {
                         </Alert>
                     )}
                     <View style={{height: 20}} />
-                    <View style={{flexDirection:'row',alignSelf:'center',justifyContent:'space-between',width:'90%'}}>
-                         <CommanButton
-                         width={'48%'}
-                        label={'Cancel'}
-                        onCkick={() => navigation.goBack()}
-                        color={'#ffffff'}
-                        titleColor={"#9945DA"}
-                    />
-                       <CommanButton
-                       width={'48%'}
-                        label={'Create Inspection'}
-                        isLoading={isLoading}
-                        onCkick={() => inspectionAdd()}
-                    />
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            alignSelf: 'center',
+                            justifyContent: 'space-between',
+                            width: '90%',
+                        }}>
+                        <CommanButton
+                            width={'48%'}
+                            label={'Cancel'}
+                            onCkick={() => navigation.goBack()}
+                            color={'#ffffff'}
+                            titleColor={'#9945DA'}
+                        />
+                        <CommanButton
+                            width={'48%'}
+                            label={'Create Inspection'}
+                            isLoading={isLoading}
+                            onCkick={() => inspectionAdd()}
+                        />
                     </View>
-                 
+
                     <View style={{height: Platform.OS == 'ios' ? 100 : 60}} />
                 </Box>
 

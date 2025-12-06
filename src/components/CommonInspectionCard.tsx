@@ -91,7 +91,7 @@ const CommonInspectionCard: React.FC<Props> = ({
             }}>
             {/* Top Row */}
             <View
-                style={{flexDirection: 'row', justifyContent: 'space-between',width:'100%'}}>
+                style={{flexDirection: 'row', justifyContent: 'space-between',width:'100%',}}>
                 {/* Icon + Title */}
                 <View style={{flexDirection: 'row',width:'80%'}}>
                     <View
@@ -138,7 +138,7 @@ const CommonInspectionCard: React.FC<Props> = ({
                 </View>
 
                 {/* Status */}
-                <View style={{width:'20%',alignItems:'flex-end'}}>
+                {/* <View style={{width:'20%',alignItems:'flex-end'}}>
                 <Text
                     style={{
                         color: getStatusColor(data?.inspection_type),
@@ -147,7 +147,37 @@ const CommonInspectionCard: React.FC<Props> = ({
                     }}>
                     {data?.inspection_type.replace('_', ' ')}
                 </Text>
-                </View>
+                </View> */}
+                 <TouchableOpacity
+                    onPress={onPress}
+                    style={{
+                        width: 60,
+                        height: 40,
+                        // position: 'relative',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        paddingTop:25
+                        // backgroundColor:'red'
+                    }}>
+                    {/* Arrow Button */}
+                    <View
+                        style={{
+                            width: 43,
+                            height: 43,
+                            borderRadius: 50,
+                            borderWidth: 1,
+                            borderColor: '#F3E7FD',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            // position: 'absolute',
+                        }}>
+                        <Image
+                            source={require('../assets/icon/right_2.png')}
+                            style={{width: 11, height:11, tintColor: '#9A46DB'}}
+                            resizeMode="contain"
+                        />
+                    </View>
+                </TouchableOpacity>
             </View>
 
             {/* Middle Row */}
@@ -187,34 +217,7 @@ const CommonInspectionCard: React.FC<Props> = ({
                         </Text>
                     </View>
                 </View>
-                <TouchableOpacity
-                    onPress={onPress}
-                    style={{
-                        width: 60,
-                        height: 40,
-                        position: 'relative',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                    }}>
-                    {/* Arrow Button */}
-                    <View
-                        style={{
-                            width: 23,
-                            height: 23,
-                            borderRadius: 50,
-                            borderWidth: 1,
-                            borderColor: '#F3E7FD',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            // position: 'absolute',
-                        }}>
-                        <Image
-                            source={require('../assets/icon/right_2.png')}
-                            style={{width: 9, height: 5, tintColor: '#9A46DB'}}
-                            resizeMode="contain"
-                        />
-                    </View>
-                </TouchableOpacity>
+               
             </View>
         </View>
     );

@@ -479,7 +479,7 @@ const Areas = ({navigation}: any): React.JSX.Element => {
                     innerRef={ref => {
                         scrollRef.current = ref;
                     }}>
-                    <View style={{alignItems: 'center', marginBottom: 10,width:'100%',borderWidth:1,borderColor:'#E5DCED',height:50,borderRadius:16,backgroundColor:'#F2F2F2',justifyContent:'center',alignContent:'center'}}>
+                    <TouchableOpacity onPress={() => setModalVisible(!modalVisible)} style={{alignItems: 'center', marginBottom: 10,width:'100%',borderWidth:1,borderColor:'#E5DCED',height:50,borderRadius:16,backgroundColor:'#F2F2F2',justifyContent:'center',alignContent:'center'}}>
                         <TouchableOpacity
                             onPress={() => setModalVisible(!modalVisible)}>
                             <Text
@@ -490,7 +490,7 @@ const Areas = ({navigation}: any): React.JSX.Element => {
                                 Mark all as Satisfactory
                             </Text>
                         </TouchableOpacity>
-                    </View>
+                    </TouchableOpacity>
                     {loadingState.loading ? (
                         <Spinner color={'my.h3'} />
                     ) : inspectionData?.areas &&

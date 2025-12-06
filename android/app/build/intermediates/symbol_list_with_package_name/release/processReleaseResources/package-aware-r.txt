@@ -3874,6 +3874,7 @@ drawable src_assets_icon_calender
 drawable src_assets_icon_calender_3
 drawable src_assets_icon_calender_5
 drawable src_assets_icon_camera
+drawable src_assets_icon_camera_2
 drawable src_assets_icon_cameranew
 drawable src_assets_icon_camicon
 drawable src_assets_icon_camoption
@@ -3888,6 +3889,7 @@ drawable src_assets_icon_completedicon
 drawable src_assets_icon_completediconheader
 drawable src_assets_icon_cover_image
 drawable src_assets_icon_createtenant
+drawable src_assets_icon_cross_6
 drawable src_assets_icon_delete
 drawable src_assets_icon_delete_21
 drawable src_assets_icon_disable
@@ -4025,6 +4027,7 @@ drawable src_assets_icon_union_2
 drawable src_assets_icon_union_3
 drawable src_assets_icon_unit_2
 drawable src_assets_icon_up_dwon
+drawable src_assets_icon_update_2
 drawable src_assets_icon_updated
 drawable src_assets_icon_upload
 drawable src_assets_icon_upload_3

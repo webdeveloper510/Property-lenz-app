@@ -31,9 +31,9 @@ import {
     apiGetSpecificProperty,
     apiInspectionList,
     apiInspectionlistById,
-    apiGetInspectionStatus
+    apiGetInspectionStatus,
 } from '../../apis/property';
-import {propertyGet, InspectionGet,} from '../../services/types';
+import {propertyGet, InspectionGet} from '../../services/types';
 import SideBar from '@/components/SideBar';
 import CommonInspectionCard from '@/components/CommonInspectionCard';
 import {handleBedroomAndBathroomCount} from '@/constant/customHooks';
@@ -43,7 +43,7 @@ import _actionCard from '@/components/HomeCard/_actionCard';
 import {setSideBar} from '../../state/propertyDataSlice';
 import cacheService from '@/services/CacheServices';
 import LinearGradient from 'react-native-linear-gradient';
-
+import {BlurView} from '@react-native-community/blur';
 // icon
 
 import Inspect from '@/assets/icon/property.png';
@@ -56,8 +56,9 @@ import Calendar from '@/assets/icon/calendarnew.png';
 import hourGlass from '@/assets/icon/hourglass.png';
 import Edit from '@/assets/icon/edit-text.png';
 import Delete from '@/assets/icon/bin.png';
-import { background } from 'styled-system';
+import {background} from 'styled-system';
 const screenHeight = Dimensions.get('window').height;
+const screenWidth = Dimensions.get('window').width;
 interface Tenant {
     id: number;
     first_name: string;
@@ -99,6 +100,19 @@ interface InspectionItem {
     }[];
 }
 
+type BadgeProps = {
+    label: string;
+    color: string;
+    textColor: string;
+    name: string;
+};
+
+type MenuItemProps = {
+    iconName: string;
+    label: string;
+    onPress: () => void;
+    isPurple: boolean;
+};
 const Details = ({navigation}: any): React.JSX.Element => {
     const userData = useAppSelector(state => state.auth.userData);
     const sideBarStatus: boolean = useAppSelector(
@@ -121,6 +135,8 @@ const Details = ({navigation}: any): React.JSX.Element => {
     const [insId, setInsId] = useState(null);
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedType, setSelectedType] = useState<string | null>(null);
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+    const [isActiveTab, setIsActiveTab] = useState('Add');
     const Inspection = [
         {
             title: 'Move In',
@@ -152,7 +168,7 @@ const Details = ({navigation}: any): React.JSX.Element => {
         overdue: [],
         recent: [],
         inProcess: [],
-        awaitingReview: []
+        awaitingReview: [],
     });
     const inspectionOptions = [
         {label: 'Move-In', value: 'MOVE_IN'},
@@ -241,6 +257,7 @@ const Details = ({navigation}: any): React.JSX.Element => {
             const online = await cacheService.checkIsOnline();
             if (online) {
                 const response = await apiGetSpecificProperty(pId);
+                console.log('🚀 ~ getDetails ~ response:', response.result);
 
                 if (response.status) {
                     setPropertyData(null);
@@ -338,7 +355,7 @@ const Details = ({navigation}: any): React.JSX.Element => {
         dispatch(setSideBar(!sideBarStatus));
     };
     const renderItem = ({item}: {item: InspectionItem}) => {
-        console.log('🚀 ~ renderItem ~ item:', item);
+       
         return (
             <CommonInspectionCard
                 data={item}
@@ -350,9 +367,9 @@ const Details = ({navigation}: any): React.JSX.Element => {
         );
     };
 
-    const Badge = ({label, color, textColor, name}) => (
+    const Badge: React.FC<BadgeProps> = ({label, color, textColor, name}) => (
         <View style={styles.badgeContainer}>
-            <View style={[styles.badgeCircle,{backgroundColor:color}]}>
+            <View style={[styles.badgeCircle, {backgroundColor: color}]}>
                 <Text style={[styles.badgeLabel, {color: textColor}]}>
                     {label}
                 </Text>
@@ -365,22 +382,109 @@ const Details = ({navigation}: any): React.JSX.Element => {
         setModalVisible(false);
 
         navigation.navigate('InspectionDetails', {
-            id: null,
+            id: pId,
             type: action,
         });
     };
 
-    const selectCheckBox = async()=>{
-        try{
-            let res = await apiGetInspectionStatus(insId)
-            console.log("res.status==========>",res)
-            if(res.status){
+    const selectCheckBox = async () => {
+        try {
+            let res = await apiGetInspectionStatus(insId);
+            console.log('res.status==========>', res);
+            if (res.status) {
             }
-        }catch(error){
-        console.log("🚀 ~ selectCheckBox ~ error:===>", error)
-
+        } catch (error) {
+            console.log('🚀 ~ selectCheckBox ~ error:===>', error);
         }
-    }
+    };
+
+    const MenuItem: React.FC<MenuItemProps> = ({
+        iconName,
+        label,
+        onPress,
+        isPurple,
+    }) => {
+        console.log('🚀 ~ MenuItem ~ isPurple:', isPurple);
+        return (
+            <TouchableOpacity
+                style={[
+                    styles.menuItem,
+                    isPurple && styles.purpleButton,
+                    // !isPurple && styles.menuItemLine,
+                ]}
+                onPress={onPress}>
+                {isPurple ? (
+                    <>
+                        <Image
+                            source={iconName}
+                            style={styles.icon21}
+                            tintColor={'#ffffff'}
+                            resizeMode="contain"
+                        />
+                        <Text style={styles.purpleButtonText}>{label}</Text>
+                    </>
+                ) : (
+                    <>
+                        {/* Placeholder icons - adjust names as needed */}
+                        <Image
+                            source={iconName}
+                            style={styles.icon21}
+                            tintColor={'#B598CB'}
+                            resizeMode="contain"
+                        />
+                        <Text style={styles.menuItemText}>{label}</Text>
+                    </>
+                )}
+            </TouchableOpacity>
+        );
+    };
+
+    // --- Main Popup Component ---
+
+    // Dummy handlers for demonstration
+    const handleAddInspections = () => {
+        console.log('Add Inspections pressed');
+        setSet(false);
+        setIns(true);
+        setModalVisible(true);
+        setIsActiveTab('Add');
+           setIsPopupVisible(false)
+    };
+    const handleRenters = () => {
+        console.log('Renters pressed');
+        setIsActiveTab('renters');
+        // setIsPopupVisible(false)
+    };
+    const handleQuickAction = () => {
+        console.log('Quick Action pressed');
+        setIsActiveTab('quick');
+        // setIsPopupVisible(false)
+    };
+    const handleViewHistory = () => {
+        console.log('View History pressed');
+        setIsActiveTab('history');
+        // setIsPopupVisible(false)
+    };
+    const handleAmenities = () => {
+        console.log('View History pressed');
+        setIsActiveTab('amenities');
+        setTimeout(()=>{
+
+            navigation.navigate('AmenitiesAdd', { propertyId: propertyData?.id, propertyType: propertyData?.type });
+        },500)
+        setIsPopupVisible(false)
+    };
+    const handleUpdateProperty = () => {
+        console.log('Update Property pressed');
+        setIsActiveTab('update');
+        // setIsPopupVisible(false)
+    };
+    const handleDeleteProperty = () => {
+        console.log('Delete Property pressed');
+        setIsActiveTab('delete');
+        // setIsPopupVisible(false)
+    };
+
     return (
         <>
             {sideBarStatus && (
@@ -438,7 +542,8 @@ const Details = ({navigation}: any): React.JSX.Element => {
                             <TouchableOpacity
                                 style={styles.menuBtn}
                                 onPress={() => {
-                                    navigation.openDrawer();
+                                    // navigation.openDrawer();
+                                    setIsPopupVisible(true);
                                 }}>
                                 <Image
                                     source={require('../../assets/icon/menu_2.png')} // Change image
@@ -517,20 +622,22 @@ const Details = ({navigation}: any): React.JSX.Element => {
                             </View>
                         </TouchableOpacity>
                         <View style={styles.infoRow}>
-                            {propertyData?.areas?.slice(0, 3).map((val, index) => {
-                                return (
-                                    <View style={styles.badge}>
-                                        <Image
-                                            source={require('../../assets/icon/bed_2.png')}
-                                            style={{width: 10, height: 10}}
-                                            resizeMode="contain"
-                                        />
-                                        <Text style={styles.badgeText}>
-                                            1 {val.title}
-                                        </Text>
-                                    </View>
-                                );
-                            })}
+                            {propertyData?.areas
+                                ?.slice(0, 3)
+                                .map((val: {title: string}, index: number) => {
+                                    return (
+                                        <View style={styles.badge}>
+                                            <Image
+                                                source={require('../../assets/icon/bed_2.png')}
+                                                style={{width: 10, height: 10}}
+                                                resizeMode="contain"
+                                            />
+                                            <Text style={styles.badgeText}>
+                                                1 {val.title}
+                                            </Text>
+                                        </View>
+                                    );
+                                })}
 
                             {/* <View style={styles.badge}>
                                 <Image
@@ -622,7 +729,7 @@ const Details = ({navigation}: any): React.JSX.Element => {
                             contentContainerStyle={{paddingVertical: 10}}
                         />
 
-                          {dataResult?.awaitingReview.length > 0 && (
+                        {dataResult?.awaitingReview.length > 0 && (
                             <Text style={styles.title}>Awaiting Review</Text>
                         )}
                         <FlatList
@@ -768,7 +875,12 @@ const Details = ({navigation}: any): React.JSX.Element => {
                                         inspection, you acknowledge that the
                                         information provided reflects your
                                         good-faith assessment of the property’s
-                                        condition…
+                                        condition at the time of inspection.
+                                        This documentation may be considered by
+                                        the owner or property manager when
+                                        evaluating potential deductions from the
+                                        security deposit, as permitted by
+                                        applicable laws and lease terms.
                                     </Text>
                                 </View>
 
@@ -782,7 +894,9 @@ const Details = ({navigation}: any): React.JSX.Element => {
                                     <View style={styles.checkboxRow}>
                                         <TouchableOpacity
                                             style={styles.checkbox}
-                                            onPress={() =>{selectCheckBox(), setAck(!ack)}}>
+                                            onPress={() => {
+                                                selectCheckBox(), setAck(!ack);
+                                            }}>
                                             {ack && (
                                                 <Image
                                                     source={require('../../assets/icon/tick.png')}
@@ -1003,6 +1117,146 @@ const Details = ({navigation}: any): React.JSX.Element => {
                             </VStack>
                         </Modal.Body>
                     </Modal.Content>
+                </Modal>
+
+                <Modal
+                    isOpen={isPopupVisible}
+                    onClose={() => setIsPopupVisible(false)}
+                    style={styles.modal21}>
+                    */ // If using basic component overlay (less robust
+                    backdrop/close)
+                    <View style={StyleSheet.absoluteFill}>
+                        <BlurView
+                            style={StyleSheet.absoluteFill}
+                            blurType="light"
+                            blurAmount={1}
+                        />
+                        <View
+                            style={{
+                                ...StyleSheet.absoluteFillObject,
+                                backgroundColor: '#9A46DB40', // Tint color
+                            }}
+                        />
+                    </View>
+                    <View style={styles.overlay21}>
+                        <View style={styles.popupCard}>
+                            {/* --- Menu Items --- */}
+                            <MenuItem
+                                label="Add Inspections"
+                                onPress={handleAddInspections}
+                                isPurple={isActiveTab == 'Add' ? true : false}
+                                iconName={require('../../assets/icon/ins.png')}
+                            />
+                            <View
+                                style={{
+                                    height: 1,
+                                    width: '70%',
+                                    backgroundColor: '#D9CBE5',
+                                    marginLeft: 22,
+                                }}
+                            />
+                            <MenuItem
+                                iconName={require('../../assets/icon/key_2.png')}
+                                label="Renters"
+                                onPress={handleRenters}
+                                isPurple={
+                                    isActiveTab == 'renters' ? true : false
+                                }
+                            />
+                            <View
+                                style={{
+                                    height: 1,
+                                    width: '70%',
+                                    backgroundColor: '#D9CBE5',
+                                    marginLeft: 22,
+                                }}
+                            />
+
+                            <MenuItem
+                                iconName={require('../../assets/icon/camera_2.png')}
+                                label="Quick Action"
+                                onPress={handleQuickAction}
+                                isPurple={isActiveTab == 'quick' ? true : false}
+                            />
+                            <View
+                                style={{
+                                    height: 1,
+                                    width: '70%',
+                                    backgroundColor: '#D9CBE5',
+                                    marginLeft: 22,
+                                }}
+                            />
+
+                            <MenuItem
+                                iconName={require('../../assets/icon/amen.png')}
+                                label="Amenities"
+                                onPress={handleAmenities}
+                                isPurple={
+                                    isActiveTab == 'amenities' ? true : false
+                                }
+                            />
+                            <View
+                                style={{
+                                    height: 1,
+                                    width: '70%',
+                                    backgroundColor: '#D9CBE5',
+                                    marginLeft: 22,
+                                }}
+                            />
+
+                            <MenuItem
+                                iconName={require('../../assets/icon/history.png')}
+                                label="View History"
+                                onPress={handleViewHistory}
+                                isPurple={
+                                    isActiveTab == 'history' ? true : false
+                                }
+                            />
+                            <View
+                                style={{
+                                    height: 1,
+                                    width: '70%',
+                                    backgroundColor: '#D9CBE5',
+                                    marginLeft: 22,
+                                }}
+                            />
+
+                            <MenuItem
+                                iconName={require('../../assets/icon/update_2.png')}
+                                label="Update Property"
+                                onPress={handleUpdateProperty}
+                                isPurple={
+                                    isActiveTab == 'update' ? true : false
+                                }
+                            />
+                            <View
+                                style={{
+                                    height: 1,
+                                    width: '70%',
+                                    backgroundColor: '#D9CBE5',
+                                    marginLeft: 22,
+                                }}
+                            />
+
+                            <MenuItem
+                                iconName={require('../../assets/icon/trash_2.png')}
+                                label="Delete Property"
+                                onPress={handleDeleteProperty}
+                                isPurple={
+                                    isActiveTab == 'delete' ? true : false
+                                }
+                            />
+                        </View>
+                        {/* Close Button (The 'X' circle) */}
+                        <TouchableOpacity
+                            style={styles.closeButton}
+                            onPress={() => setIsPopupVisible(false)}>
+                            <Image
+                                source={require('../../assets/icon/cross_6.png')}
+                                style={{width: 65, height: 65}}
+                            />
+                        </TouchableOpacity>
+                    </View>
                 </Modal>
             </SafeAreaView>
         </>
@@ -1322,6 +1576,86 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderColor: '#E5DCED',
         backgroundColor: '#F2F2F2',
+    },
+    overlay21: {
+        ...StyleSheet.absoluteFillObject,
+        justifyContent: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.4)', // The blurred purple background effect can be simulated with an overlay color
+    },
+    // Style for react-native-modal positioning
+    modal21: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: 0, // Ensure it fills the screen for the backdrop effect
+    },
+    popupCard: {
+        backgroundColor: '#FFF',
+        borderTopRightRadius: 20,
+        borderBottomRightRadius: 20,
+        width: screenWidth * 0.75, // Adjust width based on your design/screen size
+        paddingVertical: 10,
+        paddingHorizontal: 15,
+        // Add shadow based on platform
+        ...Platform.select({
+            ios: {
+                shadowColor: '#000',
+                shadowOffset: {width: 0, height: 2},
+                shadowOpacity: 0.1,
+                shadowRadius: 10,
+            },
+            android: {
+                elevation: 10,
+            },
+        }),
+    },
+    // --- Individual Menu Item Styles ---
+    menuItem: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingVertical: 19,
+        paddingHorizontal: 25,
+    },
+    menuItemLine: {
+        borderBottomWidth: 1,
+        borderBottomColor: '#D9CBE5',
+    },
+    icon21: {
+        width: 20,
+        height: 20,
+        marginRight: 15,
+    },
+    menuItemText: {
+        fontSize: 16,
+        color: '#B598CB',
+        fontWeight: '500',
+    },
+    // --- Purple Button Styles (Add Inspections) ---
+    purpleButton: {
+        backgroundColor: '#9A46DB', // Primary purple color
+        borderRadius: 40,
+        paddingVertical: 14,
+        marginBottom: 10, // Separator from the list
+    },
+    purpleButtonText: {
+        color: '#FFF',
+        fontSize: 16,
+        fontWeight: '600',
+    },
+    // --- Close Button Styles (The 'X' circle) ---
+    closeButton: {
+        position: 'absolute',
+        // Position it slightly to the right of the card and centered vertically on the card's right edge
+        right: screenWidth * 0.16, // Adjust as needed
+        top: '40%', // Approximate vertical center of the card
+        backgroundColor: '#7D47E2', // Match the main purple
+        borderRadius: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000', // Optional shadow for the X
+        shadowOffset: {width: 0, height: 2},
+        shadowOpacity: 0.2,
+        shadowRadius: 5,
+        elevation: 5,
     },
 });
 
